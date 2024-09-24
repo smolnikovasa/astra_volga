@@ -6,6 +6,8 @@ from page.checkout_step_one.checkout_step_one_locators import CheckoutStepOneLoc
 
 
 class CheckoutStepOnePage(BasePage):
+    """Класс для представления страницы https://www.saucedemo.com/checkout-step-one.html."""
+
     checkout_locators = CheckoutStepOneLocators()
 
     def send_order(self, person_data: CheckoutStepOneModel):

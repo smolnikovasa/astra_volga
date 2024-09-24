@@ -5,6 +5,8 @@ from page.cart.cart_locators import CartLocators
 
 
 class CartPage(BasePage):
+    """Класс для представления страницы https://www.saucedemo.com/cart.html."""
+
     cart_locators = CartLocators()
 
     def delete_item_in_cart(self, num):

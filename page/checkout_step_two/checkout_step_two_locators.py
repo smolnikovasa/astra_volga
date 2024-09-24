@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 
 
 class CheckoutStepTwoLocators:
+    """Селекторы страницы https://www.saucedemo.com/checkout-step-two.html."""
+
     ITEM_PRICE_TEXT = (By.CSS_SELECTOR, ".inventory_item_price")
     ITEM_TOTAL_TEXT = (By.CSS_SELECTOR, ".summary_subtotal_label")
     TAX_TEXT = (By.CSS_SELECTOR, ".summary_tax_label")

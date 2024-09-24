@@ -5,6 +5,8 @@ from page.checkout_step_two.checkout_step_two_locators import CheckoutStepTwoLoc
 
 
 class CheckoutStepTwoPage(BasePage):
+    """Класс для представления страницы https://www.saucedemo.com/checkout-step-two.html."""
+
     checkout_step_two_locators = CheckoutStepTwoLocators()
 
     def get_item_total(self) -> float:

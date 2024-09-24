@@ -5,6 +5,8 @@ from page.inventory.inventory_locators import InventoryLocators
 
 
 class InventoryPage(BasePage):
+    """Класс для представления страницы https://www.saucedemo.com/inventory.html."""
+
     inventory_locators = InventoryLocators()
 
     def select_sort(self, sort_value: str):

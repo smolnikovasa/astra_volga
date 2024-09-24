@@ -20,6 +20,7 @@ def logger():
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
+    """Передача опции указания пути к каталогу для сохранения allure файлов с результатами тестов."""
     cwd_report = os.path.join(os.path.dirname(os.path.abspath(__file__)), "allure-result")
     allure_dir = getattr(config.option, "allure_report_dir", None)
     if not allure_dir:
@@ -43,14 +44,17 @@ def driver(request):
 
 @pytest.fixture
 def first_name():
+    """Генератор имени."""
     return Faker().first_name()
 
 
 @pytest.fixture
 def last_name():
+    """Генератор фамилии."""
     return Faker().last_name()
 
 
 @pytest.fixture
 def postcode():
+    """Генератор почтового индекса."""
     return Faker().postcode()

@@ -5,6 +5,8 @@ from page.base_page import BasePage
 
 
 class AuthPage(BasePage):
+    """Класс для представления страницы авторизации https://www.saucedemo.com/."""
+
     auth_locators = AuthLocators()
 
     def auth(self, login: str, password: str):

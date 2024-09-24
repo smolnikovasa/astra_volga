@@ -14,7 +14,7 @@ from src.user_names import UserNames
 
 
 @allure.title("E2E: Оформление заказа покупателя")
-def test_add_to_chart(driver, logger, first_name, last_name, postcode):
+def test_make_order(driver, logger, first_name, last_name, postcode):
     urls = Urls()
     assert_massage = AssertMsg()
     user_names = UserNames()
